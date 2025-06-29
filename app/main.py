@@ -14,12 +14,13 @@ app = FastAPI(
 # Configuración CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["comercio-internacional-react-brknw9brk-itsdibias-projects.vercel.app"],
+    allow_origins=[
+        "https://comercio-internacional-react-brknw9brk-itsdibias-projects.vercel.app"
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
 # Modelos Pydantic
 class MarketResponse(BaseModel):
     success: bool
