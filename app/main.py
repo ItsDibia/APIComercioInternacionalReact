@@ -15,7 +15,10 @@ app = FastAPI(
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "https://comercio-internacional-react.vercel.app"
+        "https://comercio-internacional-react.vercel.app",
+        "https://comercio-internacional-react-3wgp.vercel.app",
+        "https://comercio-internacional-react-3wgp.vercel.app/comportamiento-mercado",
+        "https://comercio-internacional-react-3wgp.vercel.app/identificacion-mercados"
     ],
     allow_credentials=True,
     allow_methods=["*"],
